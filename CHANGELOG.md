@@ -1,5 +1,21 @@
 # Changelog
 
+# v0.0.2
+
+- added `rodauth-rails` with command:
+- created and routed home controller with a show action and view
+```shell
+bundle add rodauth-rails
+```
+- generated rodauth setup with:
+```shell
+rails generate rodauth:install
+```
+- followed setup instructions after generating rodauth setup but leveraged dotenv to setup action mailer settings
+- added rake task to execute migrations for the ph user
+- tweaked default rodauth-rails migration - removed password hashes from accounts
+- tweaked `app/misc/rodauth_main.rb` - removed password hashes column setup and set `use_database_authentication_functions?(true)`
+
 # v0.0.1
 
 ### Outside the application
