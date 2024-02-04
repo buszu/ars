@@ -63,3 +63,5 @@ end
 
 
 gem "rodauth-rails", "~> 1.13"
+
+gem "tailwindcss-rails", "~> 2.3"

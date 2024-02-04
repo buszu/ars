@@ -1,5 +1,14 @@
 # Changelog
 
+# v0.0.3
+
+- installed tailwindcss
+- generated views with:
+```shell
+rails generate rodauth:views --css=tailwind
+```
+- ui tweaks
+
 # v0.0.2
 
 - added `rodauth-rails` with command:

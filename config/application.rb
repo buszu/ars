@@ -19,7 +19,7 @@ require "action_cable/engine"
 Bundler.require(*Rails.groups)
 
 module Ars
-  VERSION = "0.0.2".freeze
+  VERSION = "0.0.3".freeze
 
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.

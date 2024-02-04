@@ -1,9 +1,7 @@
-<h1>Hello</h1>
-
 <% if rodauth.logged_in? %>
   <p><%= current_account.email %></p>
   <%= link_to "Sign out", rodauth.logout_path, data: { turbo_method: :post } %>
 <% else %>
-  <%= link_to "Sign in", rodauth.login_path %>
-  <%= link_to "Sign up", rodauth.create_account_path %>
+  <%= link_to "Sign in", rodauth.login_path, class: "rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" %>
+  <%= link_to "Sign up", rodauth.create_account_path, class: "text-sm font-semibold leading-6 text-gray-900" %>
 <% end %>
