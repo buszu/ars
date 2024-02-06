@@ -1,5 +1,8 @@
 # Changelog
 
+# v0.0.5
+- added `GET api/users/me` endpoint
+
 # v0.0.4
 - added and installed doorkeeper with PKCE
 - configured resource owner authenticator in doorkeeper initializer
