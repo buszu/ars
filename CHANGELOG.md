@@ -1,5 +1,9 @@
 # Changelog
 
+# v0.0.4
+- added and installed doorkeeper with PKCE
+- configured resource owner authenticator in doorkeeper initializer
+
 # v0.0.3
 
 - installed tailwindcss
