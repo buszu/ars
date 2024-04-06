@@ -1,5 +1,9 @@
 # Changelog
 
+# v0.0.6
+- fixed `resource_owner_authenticator` block
+- set `login_return_to_requested_location?` to `true`
+
 # v0.0.5
 - added `GET api/users/me` endpoint
 

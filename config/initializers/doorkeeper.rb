@@ -7,7 +7,7 @@ Doorkeeper.configure do
 
   # This block will be called to check whether the resource owner is authenticated or not.
   resource_owner_authenticator do
-    rodauth.rails_account || redirect_to(rodauth.login_path)
+    rodauth.rails_account || rodauth.require_authentication
   end
 
   # If you didn't skip applications controller from Doorkeeper routes in your application routes.rb
@@ -24,6 +24,7 @@ Doorkeeper.configure do
     # else
     #   redirect_to sign_in_url
     # end
+    next true
     head :forbidden
   end
 
@@ -214,7 +215,7 @@ Doorkeeper.configure do
   # `grant_type` - the grant type of the request (see Doorkeeper::OAuth)
   # `scopes` - the requested scopes (see Doorkeeper::OAuth::Scopes)
   #
-  # use_refresh_token
+  use_refresh_token
 
   # Provide support for an owner to be assigned to each registered application (disabled by default)
   # Optional parameter confirmation: true (default: false) if you want to enforce ownership of

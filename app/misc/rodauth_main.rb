@@ -50,8 +50,8 @@ class RodauthMain < Rodauth::Rails::Auth
     # password_confirm_param "confirm_password"
 
     # Redirect back to originally requested location after authentication.
-    # login_return_to_requested_location? true
-    # two_factor_auth_return_to_requested_location? true # if using MFA
+    login_return_to_requested_location? true
+    # two_factor_auth_return_to_requested_location? true
 
     # Autologin the user after they have reset their password.
     # reset_password_autologin? true
